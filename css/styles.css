@@ -43,7 +43,6 @@ nav {
     min-height: 75px;
     margin: auto;
     padding: 15px 5%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -94,7 +93,6 @@ nav ul li a:hover {
     min-height: 85vh;
     margin: auto;
     padding: 60px 10%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -269,6 +267,8 @@ main section h3 {
     font-size: 13px;
 }
 
+/* LINKS DOS CARDS */
+
 .conteudo-projeto a {
     color: #a78bfa;
     font-weight: bold;
@@ -276,6 +276,26 @@ main section h3 {
 
 .conteudo-projeto a:hover {
     text-decoration: underline;
+}
+
+/* CORREÇÃO DOS BOTÕES DE ACESSO */
+
+.conteudo-projeto a.botao-proximo {
+    display: inline-block;
+    background-color: #a78bfa;
+    color: #0d0d0f;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.conteudo-projeto a.botao-proximo:hover {
+    background-color: #8b5cf6;
+    color: #0d0d0f;
+    transform: translateY(-3px);
+    text-decoration: none;
 }
 
 /* ==============================
@@ -446,7 +466,7 @@ footer {
     transform: translateY(-3px);
 }
 
-/* ÁREA DE VISUALIZAÇÃO DOS CÓDIGOS */
+/* ÁREA ANTIGA DE VISUALIZAÇÃO DOS CÓDIGOS */
 
 #area-codigo {
     margin-top: 40px;
@@ -497,6 +517,45 @@ footer {
 
 #area-codigo button:hover {
     background-color: #8b5cf6;
+}
+
+/* ==============================
+   CÓDIGOS NAS PÁGINAS DE CATEGORIAS
+============================== */
+
+.codigo-detalhes {
+    margin-top: 20px;
+    border: 1px solid #7045b8;
+    border-radius: 10px;
+    background: #17171c;
+    overflow: hidden;
+}
+
+.codigo-detalhes summary {
+    padding: 15px 20px;
+    color: #c4b5fd;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.codigo-detalhes summary:hover {
+    background: #292333;
+}
+
+.codigo-detalhes pre {
+    margin: 0;
+    padding: 20px;
+    background: #0d0d0f;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+.codigo-detalhes code {
+    color: #c4b5fd;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 /* ==============================
@@ -630,6 +689,13 @@ footer {
         font-size: 12px;
     }
 
+    .codigo-detalhes pre {
+        padding: 12px;
+    }
+
+    .codigo-detalhes code {
+        font-size: 12px;
+    }
 }
 
 /* ==============================
@@ -648,5 +714,4 @@ footer {
         animation: none !important;
         transition: none !important;
     }
-
 }

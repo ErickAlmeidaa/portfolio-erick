@@ -5,32 +5,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Conheça os projetos e atividades desenvolvidos por Erick Almeida, estudante de Ciência da Computação no IFSC.">
-
+    <meta name="description" content="Projetos e atividades de Erick Almeida, estudante de Ciência da Computação no IFSC.">
     <title>Erick Almeida | Projetos</title>
 
-   <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- CABEÇALHO -->
     <header>
-
         <nav>
-
             <h2>Erick<span>.</span></h2>
 
-            <button
-                class="menu-mobile"
-                id="menu-mobile"
-                aria-label="Abrir menu"
-                aria-expanded="false"
-                aria-controls="menu">
-                ☰
-            </button>
+            <button class="menu-mobile" id="menu-mobile"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    aria-controls="menu">☰</button>
 
             <ul id="menu">
                 <li><a href="index.html">Início</a></li>
@@ -38,15 +29,14 @@
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
-
         </nav>
-
     </header>
 
     <main>
 
-        <!-- PROJETOS COMPLETOS -->
-        <section id="projetos">
+        <!-- PROJETO SAZAKI RP -->
+
+        <section id="projetos" class="animar">
 
             <h2>Meus Projetos</h2>
 
@@ -66,12 +56,10 @@
                              class="imagem-principal">
 
                         <div class="outras-imagens">
-
                             <img src="imc/projeto1/2.png" alt="Sazaki RP - imagem 2">
                             <img src="imc/projeto1/3.png" alt="Sazaki RP - imagem 3">
                             <img src="imc/projeto1/4.png" alt="Sazaki RP - imagem 4">
                             <img src="imc/projeto1/5.png" alt="Sazaki RP - imagem 5">
-
                         </div>
 
                     </div>
@@ -93,8 +81,11 @@
                             <span>JavaScript</span>
                         </div>
 
-                        <a href="https://github.com/ErickAlmeidaa/SITESAZAKI2.git" target="_blank">
-                            Ver Projeto
+                        <a href="https://github.com/ErickAlmeidaa/SITESAZAKI2"
+                           class="botao-proximo"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Ver Projeto →
                         </a>
 
                     </div>
@@ -106,8 +97,9 @@
         </section>
 
 
-        <!-- CÓDIGOS DESENVOLVIDOS -->
-        <section id="codigos">
+        <!-- CATEGORIAS DE ATIVIDADES -->
+
+        <section id="codigos" class="animar">
 
             <h2>Códigos desenvolvidos</h2>
 
@@ -119,15 +111,14 @@
             <div class="lista-projetos">
 
                 <!-- JAVA FUNDAMENTOS -->
-                <article class="card-projeto">
 
+                <article class="card-projeto">
                     <div class="conteudo-projeto">
 
                         <h3>Java — Fundamentos</h3>
 
                         <p>
-                            Primeiros passos na programação:
-                            variáveis, operadores, entrada de dados
+                            Variáveis, operadores, entrada de dados
                             e estruturas condicionais.
                         </p>
 
@@ -137,18 +128,17 @@
                             <span>If / Else</span>
                         </div>
 
-                        <button onclick="mostrarCodigo('java-fundamentos')">
-                            Ver atividades
-                        </button>
+                        <a href="fundamentos.html" class="botao-proximo">
+                            Ver atividades →
+                        </a>
 
                     </div>
-
                 </article>
 
 
                 <!-- ESTRUTURAS DE REPETIÇÃO -->
-                <article class="card-projeto">
 
+                <article class="card-projeto">
                     <div class="conteudo-projeto">
 
                         <h3>Estruturas de Repetição</h3>
@@ -165,22 +155,17 @@
                             <span>Do While</span>
                         </div>
 
-                        <button onclick="mostrarCodigo('repeticao')">
-                            Exercício 5 — Pesquisa de Salário e Idade
-                        </button>
-
-                        <button onclick="mostrarCodigo('repeticao-2')">
-                            Exercício 22 — Sistema Bancário
-                        </button>
+                        <a href="repeticao.html" class="botao-proximo">
+                            Ver atividades →
+                        </a>
 
                     </div>
-
                 </article>
 
 
                 <!-- VETORES -->
-                <article class="card-projeto">
 
+                <article class="card-projeto">
                     <div class="conteudo-projeto">
 
                         <h3>Vetores</h3>
@@ -197,18 +182,17 @@
                             <span>For</span>
                         </div>
 
-                        <button onclick="mostrarCodigo('vetores')">
-                            Ver atividades
-                        </button>
+                        <a href="vetores.html" class="botao-proximo">
+                            Ver atividades →
+                        </a>
 
                     </div>
-
                 </article>
 
 
-                <!-- POO -->
-                <article class="card-projeto">
+                <!-- PROGRAMAÇÃO ORIENTADA A OBJETOS -->
 
+                <article class="card-projeto">
                     <div class="conteudo-projeto">
 
                         <h3>Programação Orientada a Objetos</h3>
@@ -225,18 +209,17 @@
                             <span>Objetos</span>
                         </div>
 
-                        <button onclick="mostrarCodigo('poo')">
-                            Ver atividades
-                        </button>
+                        <a href="poo.html" class="botao-proximo">
+                            Ver atividades →
+                        </a>
 
                     </div>
-
                 </article>
 
 
                 <!-- BANCO DE DADOS -->
-                <article class="card-projeto">
 
+                <article class="card-projeto">
                     <div class="conteudo-projeto">
 
                         <h3>Banco de Dados</h3>
@@ -253,18 +236,17 @@
                             <span>Álgebra Relacional</span>
                         </div>
 
-                        <button onclick="mostrarCodigo('banco-dados')">
-                            Ver atividades
-                        </button>
+                        <a href="banco-dados.html" class="botao-proximo">
+                            Ver atividades →
+                        </a>
 
                     </div>
-
                 </article>
 
 
                 <!-- DESENVOLVIMENTO WEB -->
-                <article class="card-projeto">
 
+                <article class="card-projeto">
                     <div class="conteudo-projeto">
 
                         <h3>Desenvolvimento Web</h3>
@@ -281,34 +263,17 @@
                             <span>JavaScript</span>
                         </div>
 
-                        <button onclick="mostrarCodigo('web')">
-                            Ver atividades
-                        </button>
+                        <a href="web.html" class="botao-proximo">
+                            Ver atividades →
+                        </a>
 
                     </div>
-
                 </article>
 
             </div>
 
+            <!-- NAVEGAÇÃO -->
 
-            <!-- ÁREA ONDE OS CÓDIGOS SERÃO MOSTRADOS -->
-            <div id="area-codigo" style="display: none;">
-
-                <h3 id="titulo-codigo"></h3>
-
-                <p id="descricao-codigo"></p>
-
-                <pre><code id="conteudo-codigo"></code></pre>
-
-                <button onclick="fecharCodigo()">
-                    Fechar código
-                </button>
-
-            </div>
-
-
-            <!-- NAVEGAÇÃO ENTRE PÁGINAS -->
             <div class="navegacao-paginas">
 
                 <a href="sobre.html" class="botao-voltar">
@@ -325,13 +290,8 @@
 
     </main>
 
-    <!-- RODAPÉ -->
     <footer>
-
-        <p>
-            © 2026 Erick Almeida. Todos os direitos reservados.
-        </p>
-
+        <p>© 2026 Erick Almeida. Todos os direitos reservados.</p>
     </footer>
 
 </body>
