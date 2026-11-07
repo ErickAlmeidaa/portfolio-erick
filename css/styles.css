@@ -715,3 +715,51 @@ footer {
         transition: none !important;
     }
 }
+
+/* ==============================
+   ÍCONES DE CONTATO
+============================== */
+
+.redes-sociais {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.redes-sociais a {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #cccccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cccccc;
+    transition: 0.3s;
+}
+
+.redes-sociais svg {
+    width: 21px;
+    height: 21px;
+}
+
+.redes-sociais a:hover {
+    color: #a78bfa;
+    border-color: #a78bfa;
+    transform: translateY(-5px);
+}
+
+@media (max-width: 600px) {
+    .redes-sociais {
+        gap: 16px;
+    }
+
+    .redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 35px;
+}
